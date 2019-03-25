@@ -8,28 +8,52 @@
   <meta http-equiv="cache-control" content="public">
   <meta http-equiv="cache-control" content="private">
 
-  <link href="https://fonts.googleapis.com/css?family=Maitree:400,700|Nunito:400,600,700|Nunito+Sans:700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Lato:400,700" rel="stylesheet">  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet" type="text/css" />
 
   <title>Beer and BBQ</title>
 </head>
 
 <body>
+  <nav id="accordion-nav" class="d-none d-sm-block">
+    <h5>JUMP TO</h5>
+    <div class="accordion-nav">
+      <a href="#header" role="button" class="active">
+        <span class="styler"></span>
+        <span class="accordion-title">Top</span>
+      </a>
+      <a href="#vendors-sponsors" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="vendors-sponsors">
+        <span class="styler"></span>
+        <span class="accordion-title">Vendors and Sponsors</span>
+      </a>
+      <a href="#time-location" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="time-location">
+        <span class="styler"></span>
+        <span class="accordion-title">Time and Location</span>
+      </a>
+      <a href="#tickets" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="tickets">
+        <span class="styler"></span>
+        <span class="accordion-title">Tickets</span>
+      </a>
+      <a href="#sponsorship-information" data-toggle="collapse" aria-expanded="false" aria-controls="tickets">
+        <span class="styler"></span>
+        <span class="accordion-title">Sponsorship Information</span>
+      </a>
+      <a href="#2018-gallery" data-toggle="collapse" aria-expanded="false" aria-controls="2018-gallery">
+        <span class="styler"></span>
+        <span class="accordion-title">2018 Gallery</span>
+      </a>
+    </div>
+    <div class="social">
+      <a href="#" class="facebook"><i class="fab fa-facebook"></i><span class="sr-only">Facebook</span></a>
+      <a href="#" class="twitter"><i class="fab fa-twitter-square"></i><span class="sr-only">Twitter</span></a>
+    </div>
+  </nav>
   <header id="header">
     <div class="hero-overlay"></div>
     <div class="container-fluid">
       <div class="logos">
-        <a href="#"><img src="images/BusiLogo.svg" class="img-fluid" alt="Businets Logo" /></a>
-        <a href="#"><img src="images/CA_Logo.svg" class="img-fluid" alt="Childress Agency Logo" /></a>
-      </div>
-      <div class="hero-nav">
-        <div class="accordion-nav">
-
-        </div>
-        <div class="social">
-          
-        </div>
+        <a href="#"><img src="images/BusiLogo.svg" class="businets img-fluid" alt="Businets Logo" /></a>
+        <a href="#"><img src="images/CA_Logo.svg" class="childress img-fluid" alt="Childress Agency Logo" /></a>
       </div>
       <div class="hero-caption">
         <img src="images/MainLogo.svg" class="img-fluid" alt="Beer and BBQ Logo" />
@@ -37,11 +61,26 @@
         <h3>Thursday June 27</h3>
       </div>
 
-      <a href="#" id="scroll-down">All the info you need</a>
+      <a href="#" id="scroll-down" class="d-none d-sm-block">All the info you need</a>
     </div>
   </header>
   <main>
+    <div id="main-content" class="accordion">
+      <div class="card">
+        <div id="vendors-sponsors-heading" class="card-header">
+          <h2 class="mb-0">
+            <button class="accordion-tab" type="button" data-toggle="collapse" data-target="#vendors-sponsors" aria-expanded="false" aria-controls="vendors-sponsors">
+              Vendors & Sponsors
+            </button>
+          </h2>
+        </div>
+        <div id="vendors-sponsors" class="collapse" aria-labelledby="vendors-sponsors-heading" data-parent="#main-content">
+          <div class="card-body">
 
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer id="footer">
 
