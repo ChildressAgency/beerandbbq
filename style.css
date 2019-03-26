@@ -7096,28 +7096,8 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-/*****************************
- custom styles
-*****************************/
-body {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-weight: 400; }
-
-h1 {
-  font-family: "Anton", sans-serif;
-  font-size: 50px; }
-
-h2 {
-  font-family: "Anton", sans-serif;
-  font-size: 50px; }
-
-h3 {
-  font-family: "Anton", sans-serif;
-  font-size: 30px; }
-
 #header {
-  height: 100vh;
+  height: 106vh;
   width: 100%;
   position: relative;
   background-image: url(images/bbq-queue.jpg);
@@ -7161,7 +7141,7 @@ h3 {
 
 #scroll-down {
   position: absolute;
-  bottom: 45px;
+  bottom: 100px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -7253,3 +7233,127 @@ h3 {
     margin-top: -3px; }
   .accordion-nav a:hover .accordion-title {
     display: block; }
+
+.card {
+  margin-top: -50px;
+  background: transparent;
+  border-top: 4px solid #000;
+  border-left: 4px solid #000;
+  border-right: 4px solid #000;
+  border-top-left-radius: 53px;
+  border-top-right-radius: 53px;
+  text-align: center; }
+  .card .card-body {
+    padding-bottom: 60px; }
+  .card #vendors-sponsors {
+    box-shadow: inset 0px 132px 75px -51px #eacbc6; }
+  .card #time-location {
+    box-shadow: inset 0px 132px 75px -51px #EFBEB3; }
+  .card #tickets {
+    box-shadow: inset 0px 132px 75px -51px #E0ADA5; }
+  .card #sponsorship-information {
+    box-shadow: inset 0px 132px 75px -51px #DB9B93; }
+  .card #last-year-gallery {
+    box-shadow: inset 0px 132px 75px -51px #CA8B83; }
+
+.card-header {
+  padding-bottom: 60px; }
+  .card-header#vendors-sponsors-heading {
+    background-color: #EACBC6; }
+  .card-header#time-location-heading {
+    background-color: #EFBEB3; }
+  .card-header#tickets-heading {
+    background-color: #E0ADA5; }
+  .card-header#sponsorship-information-heading {
+    background-color: #DB9B93; }
+  .card-header#last-year-gallery-heading {
+    background-color: #CA8B83; }
+  .card-header button {
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+    color: #543E36;
+    background: transparent;
+    border: none; }
+
+/*****************************
+ custom styles
+*****************************/
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400; }
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 50px; }
+
+h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 50px; }
+
+h3 {
+  font-family: "Anton", sans-serif;
+  font-size: 30px; }
+
+*:focus {
+  outline: none !important; }
+
+p {
+  line-height: 1.2em; }
+
+.btn-cutout {
+  font-size: 18px;
+  color: #fff;
+  display: inline-block;
+  background-color: #CA8B83;
+  border: 5px dashed #543E36;
+  border-radius: 12px;
+  background-clip: padding-box;
+  padding: 5px; }
+
+.btn-cutout:hover,
+.btn-cutout:focus {
+  border-style: solid;
+  color: #fff;
+  text-decoration: none; }
+
+#main-content {
+  position: relative;
+  z-index: 99; }
+  #main-content h3 {
+    font-size: 28px; }
+  #main-content article {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px; }
+  #main-content article > header {
+    margin-bottom: 40px; }
+  #main-content article > header > h3 {
+    margin-bottom: 20px; }
+  #main-content article > header > p {
+    font-size: 24px; }
+  #main-content section p {
+    text-align: left; }
+  #main-content .vip-sponsors, #main-content .sponsors-list, #main-content .vendors-list {
+    margin-top: 40px; }
+    #main-content .vip-sponsors ul li, #main-content .sponsors-list ul li, #main-content .vendors-list ul li {
+      margin-left: 15px;
+      margin-right: 15px; }
+    #main-content .vip-sponsors ul img, #main-content .sponsors-list ul img, #main-content .vendors-list ul img {
+      max-width: 140px;
+      height: auto;
+      margin-top: 20px; }
+  #main-content .sponsors-list ul img, #main-content .vendors-list ul img {
+    max-width: 100px; }
+  #main-content .vendors {
+    margin-top: 80px; }
+  #main-content .map {
+    background-image: url(images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: -90px -20px -15px -20px;
+    height: 685px; }
+    #main-content .map .map-stripe {
+      background-color: rgba(224, 173, 165, 0.4); }

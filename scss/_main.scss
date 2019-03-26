@@ -21,172 +21,99 @@ h3{
   font-size:30px;
 }
 
-#header{
-  height:100vh;
-  width:100%;
-  position:relative;
-  background-image:url(images/bbq-queue.jpg);
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center center;
-
-  .hero-overlay{
-    position:absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    background-color:rgba(0,0,0,.6);
-    z-index:1;
-  }
-
-  .logos{
-    position:relative;
-    z-index:3;
- 
-    img{
-     max-width:165px;
-      height:auto;
-      margin-top:25px;
-    }
-    img.childress{
-      max-width:150px;
-      margin-left:15px;
-    }
-
-    @include media-breakpoint-down(sm){
-      text-align:center;
-    }
-  }
+*:focus{
+  outline:none !important;
 }
 
-.hero-caption{
-  max-width:565px;
-  margin-left:auto;
-  margin-right:auto;
-  position:relative;
-  z-index:3;
-  margin-top:60px;
+p{
+  line-height:1.2em;
+}
+
+.btn-cutout{
+  font-size:18px;
   color:#fff;
-  text-align:center;
-
-  h1{
-    margin-top:80px;
-    margin-bottom:20px;
-  }
+  display:inline-block;
+  background-color: #CA8B83;
+  border: 5px dashed #543E36;
+  border-radius:12px;
+  background-clip:padding-box;
+  padding:5px;
 }
-
-#scroll-down{
-  position:absolute;
-  bottom:45px;
-  left:50%;
-  transform:translateX(-50%);
-  font-family:$alt-font;
+.btn-cutout:hover,
+.btn-cutout:focus{
+  border-style:solid;
   color:#fff;
-  z-index:3;
-
-  &::before{
-    content:"";
-    border-top:23px solid #fff;
-    border-left:80px solid transparent;
-    border-right:80px solid transparent;
-    position:absolute;
-    bottom:-25px;
-    left:50%;
-    transform:translateX(-50%);
-    width:158px;
-  }
+  text-decoration:none;
 }
 
-#accordion-nav{
-  position:fixed;
-  z-index:999999;
-  top:50%;
-  transform:translateY(-50%);
-  left:25px;
+#main-content{
+  position:relative;
+  z-index:99;
 
-  h5{
-    font-family:$alt-font;
-    font-size:14px;
-    color:#CCCCCC;
+
+  h3{
+    font-size:28px;
   }
 
-  .social{
-    text-align:center; 
-
-    a{
-      display:block;
-      font-size:24px;
-      color:#fff;
-    }
-  }
-}  
-.accordion-nav{
-  a{
-    display:block;
-    height:22px;
-    width:22px;
-    border:2px solid #ccc;
-    border-radius:50%;
-    margin-bottom:20px;
+  article{
+    max-width:800px;
     margin-left:auto;
     margin-right:auto;
-    position:relative;
+    padding-bottom:100px;
+  }
+  article>header{
+    margin-bottom:40px;
+  }
+  article>header>h3{
+    margin-bottom:20px;
+  }
+  article>header>p{
+    font-size:24px;
+  }
+  section p{
+    text-align:left;
+  }
 
-    &.active{
-      background-color:#ccc;
-    }
+  .vip-sponsors{
+    margin-top:40px;
 
-    &:hover{
-      background-color:#CA8B83;
-      border-color:#CA8B83;
-      text-decoration:none;
+    ul li{
+      margin-left:15px;
+      margin-right:15px;
     }
+    
+    ul img{
+      max-width:140px;
+      height:auto;
+      margin-top:20px;
+    }
+  }
 
-    &>.styler::after{
-      content:"";
-      position:absolute;
-      height:22px;
-      width:2px;
-      top:-22px;
-      left:50%;
-      transform:translateX(-50%);
-      background-color:#ccc;
-    }
-    &:hover>.styler{
-      height:30px;
-      width:30px;
-      display: block;
-      border:2px solid #ccc;
-      border-radius:50%;
-      position:absolute;
-      top:50%;
-      left:50%;
-      transform:translate(-50%, -50%);
-    }
-    &:hover>.styler::after{
-      height:18px;
-      top:-18px;
-    }
-    &:hover + a>.styler::after{
-      top:-20px;
-      height:20px;
-    }
-    &:first-child>.styler::after{
-      height:0;
-      width:0;
-    }
+  .sponsors-list{
+    @extend .vip-sponsors;
 
-    & .accordion-title{
-      color:#ccc;
-      font-size:16px;
-      display:none;
-      white-space:nowrap;
-      margin-left:32px;
-      margin-top:-3px;
+    ul img{
+      max-width:100px;
     }
-    &:hover .accordion-title{
-      display:block;
+  }
+
+  .vendors{
+    margin-top:80px;
+  }
+  .vendors-list{
+    @extend .sponsors-list;
+  }
+
+  .map{
+    background-image:url(images/map.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    margin:-90px -20px -15px -20px;
+    height:685px;
+
+    .map-stripe{
+      background-color: rgba(224, 173, 165, .4);
     }
   }
 }

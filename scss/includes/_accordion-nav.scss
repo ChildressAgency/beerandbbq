@@ -1,0 +1,92 @@
+#accordion-nav{
+  position:fixed;
+  z-index:999999;
+  top:50%;
+  transform:translateY(-50%);
+  left:25px;
+
+  h5{
+    font-family:$alt-font;
+    font-size:14px;
+    color:#CCCCCC;
+  }
+
+  .social{
+    text-align:center; 
+
+    a{
+      display:block;
+      font-size:24px;
+      color:#fff;
+    }
+  }
+}  
+.accordion-nav{
+  a{
+    display:block;
+    height:22px;
+    width:22px;
+    border:2px solid #ccc;
+    border-radius:50%;
+    margin-bottom:20px;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+
+    &.active{
+      background-color:#ccc;
+    }
+
+    &:hover{
+      background-color:#CA8B83;
+      border-color:#CA8B83;
+      text-decoration:none;
+    }
+
+    &>.styler::after{
+      content:"";
+      position:absolute;
+      height:22px;
+      width:2px;
+      top:-22px;
+      left:50%;
+      transform:translateX(-50%);
+      background-color:#ccc;
+    }
+    &:hover>.styler{
+      height:30px;
+      width:30px;
+      display: block;
+      border:2px solid #ccc;
+      border-radius:50%;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+    }
+    &:hover>.styler::after{
+      height:18px;
+      top:-18px;
+    }
+    &:hover + a>.styler::after{
+      top:-20px;
+      height:20px;
+    }
+    &:first-child>.styler::after{
+      height:0;
+      width:0;
+    }
+
+    & .accordion-title{
+      color:#ccc;
+      font-size:16px;
+      display:none;
+      white-space:nowrap;
+      margin-left:32px;
+      margin-top:-3px;
+    }
+    &:hover .accordion-title{
+      display:block;
+    }
+  }
+}
