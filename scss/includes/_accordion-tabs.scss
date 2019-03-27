@@ -5,8 +5,9 @@
   border-top:4px solid #000;
   border-left:4px solid #000;
   border-right: 4px solid #000;
-  border-top-left-radius: 53px;
-  border-top-right-radius: 53px;
+  border-bottom:none;
+  border-top-left-radius: 53px !important;
+  border-top-right-radius: 53px !important;
   text-align:center;
 
   .card-body{

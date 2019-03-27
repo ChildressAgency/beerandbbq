@@ -49,7 +49,7 @@
     </div>
   </nav>
   <header id="header">
-    <div class="hero-overlay"></div>
+    <div class="overlay"></div>
     <div class="container-fluid">
       <div class="logos">
         <a href="#"><img src="images/BusiLogo.svg" class="businets img-fluid" alt="Businets Logo" /></a>
@@ -502,12 +502,12 @@
                 <div class="contact-form">
                   <p>Submit your email below to stay in the loop about updates involving the Beer and BBQ.</p>
                   <div class="form-group">
-                    <label for="your-name" class="sr-only">First Name</label>
-                    <input type="text" id="your-name" class="form-control form-control-lg" placeholder="First Name*" />
+                    <label for="contact-name" class="sr-only">First Name</label>
+                    <input type="text" id="contact-name" class="form-control form-control-lg" placeholder="First Name*" />
                   </div>
                   <div class="form-group">
-                    <label for="your-email" class="sr-only">Email</label>
-                    <input type="email" id="your-email" class="form-control form-control-lg" placeholder="Email" />
+                    <label for="contact-email" class="sr-only">Email</label>
+                    <input type="email" id="contact-email" class="form-control form-control-lg" placeholder="Email" />
                   </div>
                   <input type="submit" class="btn-main" value="Email" />
                 </div>
@@ -515,8 +515,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 sponsor">
+        <div class="col-md-6 beer-sponsor d-flex justify-content-center align-items-center">
+          <div class="overlay"></div>
+          <h2>Become a Sponsor</h2>
           <div class="beer-foam">
+            <img src="images/beer-foam.png" class="img-fluid" alt="beer foam" />
             <div class="foam-1"></div>
             <div class="foam-2"></div>
             <div class="foam-3"></div>
@@ -531,6 +534,21 @@
             <div class="bubble bubble3"></div>
             <div class="bubble bubble4"></div>
             <div class="bubble bubble5"></div>
+            <div class="bubble bubble6"></div>
+            <div class="bubble bubble7"></div>
+            <div class="bubble bubble8"></div>
+          </div>
+          <div class="sponsor-form">
+            <p>Contact us today to find out about our different sponsorship levels.</p>
+            <div class="form-group">
+              <label for="sponsor-name" class="sr-only">First Name</label>
+              <input type="text" id="sponsor-name" class="form-control form-control-lg" placeholder="First Name" />
+            </div>
+            <div class="form-group">
+              <label for="sponsor-email" class="sr-only">Email</label>
+              <input type="email" id="sponsor-email" class="form-control form-control-lg" placeholder="Email" />
+            </div>
+            <input type="submit" class="btn-main btn-alt" value="Email" />
           </div>
         </div>
       </div>
@@ -540,19 +558,21 @@
         <div class="row">
           <div class="col-sm-6">
             <a href="#" class="footer-logo">
-              <img src="images/businets-logo-color.png" class="img-fluid" alt="Businets Logo" />
+              <img src="images/businets-logo-color.png" class="img-fluid d-block mx-auto" alt="Businets Logo" />
             </a>
             <a href="#" class="footer-logo">
-              <img src="images/CA_Logo.svg" class="img-fluid" alt="Childress Agency Logo" />
+              <img src="images/CA_Logo.svg" class="img-fluid d-block mx-auto" alt="Childress Agency Logo" />
             </a>
           </div>
           <div class="col-sm-6 text-center">
-            <p>Businets and Childress Beer & BBQ</p>
-            <p>GET IN TOUCH<br />
-              <a href="mailto:mpierce@businetsinc.com">mpierce@businetsinc.com</a>
-              <a href="tel:540-374-9244">540-374-9244</a>
-            </p>
-            <p class="copyright">&copy;2019 Businets Inc. | &copy;2019 Childress Agency | Website designed by <a href="https://childressagency.com">Childress Agency</a></p>
+            <div class="contact-copyright">
+              <p>Businets and Childress Beer & BBQ</p>
+              <p>GET IN TOUCH<br />
+                <a href="mailto:mpierce@businetsinc.com">mpierce@businetsinc.com</a><br />
+                <a href="tel:540-374-9244">540-374-9244</a>
+              </p>
+              <p class="copyright">&copy;2019 Businets Inc. | &copy;2019 Childress Agency | Website designed by <a href="https://childressagency.com">Childress Agency</a></p>
+            </div>
           </div>
         </div>
       </div>
