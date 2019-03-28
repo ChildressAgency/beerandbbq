@@ -34,6 +34,7 @@ gulp.task('js', function(){
 gulp.task('serve', gulp.series('sass', function () {
 
   browserSync.init({
+    //just a slash opens index.html. change to other filename like ./demo-home.html
     server: "./"
   });
 
