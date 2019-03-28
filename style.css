@@ -7179,9 +7179,10 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  position: relative; }
-  .accordion-nav a.active {
-    background-color: #ccc; }
+  position: relative;
+  background-color: #ccc; }
+  .accordion-nav a.collapsed {
+    background-color: transparent; }
   .accordion-nav a:hover {
     background-color: #CA8B83;
     border-color: #CA8B83;
@@ -7459,8 +7460,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bubble1 {
   left: 5%;
-  height: 6%;
-  width: 6%;
+  height: 26px;
+  width: 26px;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
   -webkit-animation-duration: 1000ms;
@@ -7468,8 +7469,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bubble2 {
   left: 10%;
-  height: 9%;
-  width: 9%;
+  height: 40px;
+  width: 40px;
   -webkit-animation-delay: 700ms;
           animation-delay: 700ms;
   -webkit-animation-duration: 1100ms;
@@ -7477,8 +7478,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bubble3 {
   left: 25%;
-  height: 6%;
-  width: 6%;
+  height: 26px;
+  width: 26px;
   -webkit-animation-delay: 1200ms;
           animation-delay: 1200ms;
   -webkit-animation-duration: 1300ms;
@@ -7486,8 +7487,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bubble4 {
   left: 35%;
-  height: 9%;
-  width: 9%;
+  height: 40px;
+  width: 40px;
   -webkit-animation-delay: 1100ms;
           animation-delay: 1100ms;
   -webkit-animation-duration: 700ms;
@@ -7495,8 +7496,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bubble5 {
   left: 55%;
-  height: 9%;
-  width: 9%;
+  height: 40px;
+  width: 40px;
   -webkit-animation-delay: 1300ms;
           animation-delay: 1300ms;
   -webkit-animation-duration: 800ms;
@@ -7504,8 +7505,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bubble6 {
   left: 70%;
-  height: 6%;
-  width: 6%;
+  height: 26px;
+  width: 26px;
   -webkit-animation-delay: 700ms;
           animation-delay: 700ms;
   -webkit-animation-duration: 1200ms;
@@ -7513,8 +7514,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bubble7 {
   left: 85%;
-  height: 6%;
-  width: 6%;
+  height: 26px;
+  width: 26px;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
   -webkit-animation-duration: 1000ms;
@@ -7522,8 +7523,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bubble8 {
   left: 95%;
-  height: 9%;
-  width: 9%;
+  height: 40px;
+  width: 40px;
   -webkit-animation-delay: 1100ms;
           animation-delay: 1100ms;
   -webkit-animation-duration: 800ms;
