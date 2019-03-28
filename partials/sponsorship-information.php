@@ -40,7 +40,7 @@
                       <?php echo wp_kses_post($level['what_you_get']); ?>
                       <p class="mb-0 mt-4"><strong>SO HOW MUCH IS IT?</strong></p>
                       <p class="price">$<?php echo esc_html($level['price']); ?></p>
-                      <a href="<?php echo esc_url($level['contact_link']); ?>" class="btn-cutout">Contact Us Today</a>
+                      <a href="<?php echo esc_url($level['contact_link']); ?>" class="btn-cutout scroller">Contact Us Today</a>
                     </article>
                   </div>
                 <?php $i++; endforeach; ?>

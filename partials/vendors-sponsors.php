@@ -16,7 +16,7 @@
           <div class="row">
             <div class="col-sm-3">
               <h3>Sponsors</h3>
-              <a href="<?php echo esc_url(get_field('become_a_sponsor_link')); ?>" class="btn-cutout">Become A Sponsor</a>
+              <a href="<?php echo esc_url(get_field('become_a_sponsor_link')); ?>" class="btn-cutout scroller">Become A Sponsor</a>
             </div>
             <div class="col-sm-9">
               <?php echo wp_kses_post(get_field('sponsor_section_content')); ?>
@@ -67,7 +67,7 @@
           <div class="row">
             <div class="col-sm-3">
               <h3>Vendors</h3>
-              <a href="<?php echo esc_url(get_field('become_a_vendor_link')); ?>" class="btn-cutout">Become a Vendor</a>
+              <a href="<?php echo esc_url(get_field('become_a_vendor_link')); ?>" class="btn-cutout scroller">Become a Vendor</a>
             </div>
             <div class="col-sm-9">
               <?php echo wp_kses_post(get_field('vendor_section_content')); ?>
