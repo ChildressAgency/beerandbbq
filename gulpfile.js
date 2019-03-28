@@ -5,12 +5,15 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var sourcemaps = require('gulp-sourcemaps');
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function(){
   return gulp.src('scss/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest("./"))
     .pipe(browserSync.stream());
 });
