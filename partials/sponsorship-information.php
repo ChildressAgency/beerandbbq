@@ -17,22 +17,23 @@
           if($sponsorship_levels): ?>
             <section class="sponsor-levels">
               <ul class="nav nav-pills flex-column flex-sm-row nav-justified" id="levels-tab" role="tablist">
-                <?php foreach($sponsorship_levels as $level): ?>
+                <?php $i=0; foreach($sponsorship_levels as $level): ?>
                   <?php 
                     $level_name = esc_html($level['level_name']); 
                     $level_slug = sanitize_title($level_name);
                   ?>
                   <li class="nav-item">
-                    <a href="#level-<?php echo $level_slug; ?>" class="nav-link active" id="levels-tab-<?php echo $level_slug; ?>" data-toggle="pill" role="tab" aria-controls="level-<?php echo $level_slug; ?>" aria-selected="true"><?php echo $level_name; ?></a>
+                    <a href="#level-<?php echo $level_slug; ?>" class="nav-link<?php if($i==0){ echo ' active'; } ?>" id="levels-tab-<?php echo $level_slug; ?>" data-toggle="pill" role="tab" aria-controls="level-<?php echo $level_slug; ?>" aria-selected="true"><?php echo $level_name; ?></a>
                   </li>
-                <?php endforeach; ?>
+                <?php $i++; endforeach; ?>
               </ul>
               <div id="levels-content" class="tab-content">
-                <div id="level-music" class="tab-pane fade show active" role="tabpanel" aria-labelledby="levels-tab-music">
-                  <?php foreach($sponsorship_levels as $level): ?>
+                <?php $i=0; foreach($sponsorship_levels as $level): ?>
+                  <?php $level_name = sanitize_title($level['level_name']); ?>
+                  <div id="level-<?php echo esc_html($level_name); ?>" class="tab-pane fade<?php if($i==0){ echo ' show active'; } ?>" role="tabpanel" aria-labelledby="levels-tab-<?php echo esc_html($level_name); ?>">
                     <article>
                       <header>
-                        <h3>Music Sponsor</h3>
+                        <h3 style="text-transform:capitalize;"><?php echo esc_html($level_name); ?> Sponsor</h3>
                         <p>(<?php echo esc_html($level['number_available']); ?> available)</p>
                       </header>
                       <p class="mb-0"><strong>WHAT YOU GET</strong></p>
@@ -41,8 +42,8 @@
                       <p class="price">$<?php echo esc_html($level['price']); ?></p>
                       <a href="<?php echo esc_url($level['contact_link']); ?>" class="btn-cutout">Contact Us Today</a>
                     </article>
-                  <?php endforeach; ?>
-                </div>
+                  </div>
+                <?php $i++; endforeach; ?>
               </div>
             </section>
         <?php endif; ?>

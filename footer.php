@@ -44,10 +44,10 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <a href="https://www.businetsinc.com/" class="footer-logo">
+            <a href="https://www.businetsinc.com/" class="footer-logo" target="_blank">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/businets-logo-color.png" class="img-fluid d-block mx-auto" alt="Businets Logo" />
             </a>
-            <a href="https://childressagency.com" class="footer-logo">
+            <a href="https://childressagency.com" class="footer-logo" target="_blank">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/CA_Logo.svg" class="img-fluid d-block mx-auto" alt="Childress Agency Logo" />
             </a>
           </div>

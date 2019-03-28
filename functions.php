@@ -1,9 +1,9 @@
 <?php
-add_action('wp_footer', 'show_template');
-function show_template() {
-	global $template;
-	print_r($template);
-}
+//add_action('wp_footer', 'show_template');
+//function show_template() {
+//	global $template;
+//	print_r($template);
+//}
 
 add_action('wp_enqueue_scripts', 'jquery_cdn');
 function jquery_cdn(){
@@ -15,7 +15,7 @@ function jquery_cdn(){
 }
 
 add_action('wp_enqueue_scripts', 'beerandbbq_scripts');
-function fedcon_scripts(){
+function beerandbbq_scripts(){
   wp_register_script(
     'bootstrap-popper',
     'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
@@ -103,3 +103,4 @@ function beerandbbq_setup(){
 }
 
 require_once dirname(__FILE__) . '/includes/class-wp-bootstrap-navwalker.php';
+require_once dirname(__FILE__) . '/includes/acf-fields.php';

@@ -19,7 +19,7 @@
               <a href="<?php echo esc_url(get_field('become_a_sponsor_link')); ?>" class="btn-cutout">Become A Sponsor</a>
             </div>
             <div class="col-sm-9">
-              <?php echo wp_kses_post(get_field('sponsors_section_content')); ?>
+              <?php echo wp_kses_post(get_field('sponsor_section_content')); ?>
             </div>
           </div>
           <?php if(have_rows('vip_sponsors')): ?>
