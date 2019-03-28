@@ -44,9 +44,9 @@
     </div>
     <div class="social">
       <?php if(get_field('facebook', 'option')): ?>
-        <a href="<?php echo esc_url(get_field('facebook', 'option')); ?>" class="facebook"><i class="fab fa-facebook"></i><span class="sr-only">Facebook</span></a>
+        <a href="<?php echo esc_url(get_field('facebook', 'option')); ?>" class="facebook" target="_blank"><i class="fab fa-facebook"></i><span class="sr-only">Facebook</span></a>
       <?php endif; if(get_field('twitter', 'option')): ?>
-        <a href="<?php echo esc_url('twitter', 'option')); ?>" class="twitter"><i class="fab fa-twitter-square"></i><span class="sr-only">Twitter</span></a>
+        <a href="<?php echo esc_url(get_field('twitter', 'option')); ?>" class="twitter" target="_blank"><i class="fab fa-twitter-square"></i><span class="sr-only">Twitter</span></a>
       <?php endif; ?>
     </div>
   </nav>
@@ -54,8 +54,8 @@
     <div class="overlay"></div>
     <div class="container-fluid">
       <div class="logos">
-        <a href="https://www.businetsinc.com/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/BusiLogo.svg" class="businets img-fluid" alt="Businets Logo" /></a>
-        <a href="https://childressagency.com"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/CA_Logo.svg" class="childress img-fluid" alt="Childress Agency Logo" /></a>
+        <a href="https://www.businetsinc.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/BusiLogo.svg" class="businets img-fluid" alt="Businets Logo" /></a>
+        <a href="https://childressagency.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/CA_Logo.svg" class="childress img-fluid" alt="Childress Agency Logo" /></a>
       </div>
       <div class="hero-caption">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/MainLogo.svg" class="img-fluid" alt="Beer and BBQ Logo" />

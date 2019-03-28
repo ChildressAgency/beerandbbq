@@ -62,4 +62,15 @@ jQuery(document).ready(function($){
       $('a[href="#header"]').addClass('collapsed');
     });
   });
+
+  $('#gallery-modal').on('show.bs.modal', function(event){
+    var button = $(event.relatedTarget);
+    var imgUrl = button.data('img_url');
+    var imgTitle = button.data('img_title');
+
+    var modal = $(this);
+    modal.find('.modal-title').text(imgTitle);
+    var imgHtml = '<img src="' + imgUrl + '" class="img-fluid" alt="' + imgTitle + '" />';
+    modal.find('.modal-body').html(imgHtml);
+  });
 });
