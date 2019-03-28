@@ -1,16 +1,5 @@
 jQuery(document).ready(function($){
   $('.beer-sponsor').hover(function(){
-    /*$('.liquid').animate({
-      top: '-10%'
-    }, 1500, function(){
-      $('.beer-sponsor h2').fadeOut('fast', function(){
-        $('.sponsor-form').css('display', 'block').animate({
-          opacity:'1',
-          left:'0'
-        }, 500);
-      });
-    });*/
-
     $('.beer-sponsor h2').delay(750).fadeOut(5);
     $('.liquid').animate({
       top:'-10%'
@@ -37,7 +26,6 @@ jQuery(document).ready(function($){
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
     var targetId = $(this).attr('href');
-    console.log(targetId);
 
     // Does a scroll target exist?
     if (target.length) {
