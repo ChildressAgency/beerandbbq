@@ -59,8 +59,8 @@
                   $footer_email = get_field('footer_email', 'option');
                   $footer_phone = get_field('footer_phone', 'option');
                 ?>
-                <a href="mailto:<?php echo esc_url($footer_email); ?>"><?php echo esc_url($footer_email); ?></a><br />
-                <a href="tel:<?php echo esc_url($footer_phone); ?>"><?php echo esc_url($footer_phone); ?></a>
+                <a href="mailto:<?php echo esc_html($footer_email); ?>"><?php echo esc_html($footer_email); ?></a><br />
+                <a href="tel:<?php echo esc_html($footer_phone); ?>"><?php echo esc_html($footer_phone); ?></a>
               </p>
               <p class="copyright">&copy;2019 Businets Inc. | &copy;2019 Childress Agency | Website designed by <a href="https://childressagency.com">Childress Agency</a></p>
             </div>

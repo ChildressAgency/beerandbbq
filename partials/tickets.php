@@ -20,7 +20,7 @@
             <div class="col-sm-9">
               <?php echo wp_kses_post(get_field('tickets_section_content')); ?>
               <p class="free">FREE</p>
-              <a href="<?php echo esc_url(get_field('buy_ticket_link')); ?>" class="btn-cutout">GET YOUR TICKET NOW</a>
+              <a href="<?php echo esc_url(get_field('buy_ticket_link')); ?>" class="btn-cutout" style="float:left;">GET YOUR TICKET NOW</a>
             </div>
           </div>
         </section>

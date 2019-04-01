@@ -58,7 +58,7 @@
         <a href="https://childressagency.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/CA_Logo.svg" class="childress img-fluid" alt="Childress Agency Logo" /></a>
       </div>
       <div class="hero-caption">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/MainLogo.svg" class="img-fluid" alt="Beer and BBQ Logo" />
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/MainLogo.png" class="img-fluid" alt="Beer and BBQ Logo" />
         <h1>Bringing Leaders Together</h1>
         <h3>Thursday June 27</h3>
       </div>
