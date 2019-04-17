@@ -1,0 +1,60 @@
+.card{
+  margin-top:-50px;
+
+  background:transparent;
+  border-top:4px solid #000;
+  border-left:4px solid #000;
+  border-right: 4px solid #000;
+  border-bottom:none;
+  border-top-left-radius: 53px !important;
+  border-top-right-radius: 53px !important;
+  text-align:center;
+
+  .card-body{
+    padding-bottom:60px;
+  }
+
+  & #vendors-sponsors{
+    box-shadow: inset 0px 132px 75px -51px #eacbc6;
+  }
+  & #time-location{
+    box-shadow: inset 0px 132px 75px -51px #EFBEB3;
+  }
+  & #tickets{
+    box-shadow: inset 0px 132px 75px -51px #E0ADA5;
+  }
+  & #sponsorship-information{
+    box-shadow: inset 0px 132px 75px -51px #DB9B93;
+  }
+  & #last-year-gallery{
+    box-shadow: inset 0px 132px 75px -51px #CA8B83;
+  }
+}
+
+.card-header{
+  padding-bottom:60px;
+
+  &#vendors-sponsors-heading{
+    background-color: #EACBC6;
+  }
+  &#time-location-heading{
+    background-color: #EFBEB3;
+  }
+  &#tickets-heading{
+    background-color: #E0ADA5;
+  }
+  &#sponsorship-information-heading{
+    background-color: #DB9B93;
+  }
+  &#last-year-gallery-heading{
+    background-color: #CA8B83;
+  }
+
+  button{
+    font-family:$alt-font;
+    font-size:50px;
+    color:#543E36;
+    background:transparent;
+    border:none;
+  }
+}
